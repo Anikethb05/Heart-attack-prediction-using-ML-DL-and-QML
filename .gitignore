@@ -1,2 +1,9 @@
-instance/medical.db
+.venv
 ./__pycache__/
+database/
+src/components/__pycache__/
+src/components/disease_pages/__pycache__/
+src/utils/disease_pages/__pycache__/
+templates/
+old_app.__py
+test_app.py

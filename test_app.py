@@ -13,7 +13,7 @@ from flask import session
 from werkzeug.security import generate_password_hash, check_password_hash
 
 # Import the Flask application
-from app import (
+from old_app import (
     app, db, Doctor, PatientData, load_model_files,
     FEATURE_LISTS, LABEL_TO_NUMERIC, _classify_risk
 )
@@ -268,7 +268,7 @@ class FlaskMedicalAppTests(unittest.TestCase):
             mock_model.return_value.generate_content.return_value = mock_response
 
             # Call the function
-            from app import get_gemini_recommendations
+            from old_app import get_gemini_recommendations
             recommendations = get_gemini_recommendations('heart-attack', {'age': 50})
 
             # Verify the response

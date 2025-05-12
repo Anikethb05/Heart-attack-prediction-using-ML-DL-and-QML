@@ -1,0 +1,60 @@
+[settings]
+app_name = "MediScope AI"
+version = "1.0.0"
+description = "AI-powered medical diagnosis platform for predicting diseases."
+author = "AJ"
+
+[models]
+# Classical ML Models
+heart_attack = {
+    "RF" = "models/heart-attack/RF_model",
+    "KNN" = "models/heart-attack/KNN_model",
+    "DT" = "models/heart-attack/DT_model",
+    "LR" = "models/heart-attack/LR_model",
+    "SVM" = "models/heart-attack/SVM_model",
+    "NB" = "models/heart-attack/NB_model",
+    "DL" = "models/heart-attack/DL_model"
+}
+
+breast_cancer = {
+    "RF" = "models/breast-cancer/RF_model",
+    "KNN" = "models/breast-cancer/KNN_model",
+    "DT" = "models/breast-cancer/DT_model",
+    "LR" = "models/breast-cancer/LR_model",
+    "SVM" = "models/breast-cancer/SVM_model",
+    "NB" = "models/breast-cancer/NB_model",
+    "DL" = "models/breast-cancer/DL_model"
+}
+
+diabetes = {
+    "RF" = "models/diabetes/RF_model",
+    "KNN" = "models/diabetes/KNN_model",
+    "DT" = "models/diabetes/DT_model",
+    "LR" = "models/diabetes/LR_model",
+    "SVM" = "models/diabetes/SVM_model",
+    "NB" = "models/diabetes/NB_model",
+    "DL" = "models/diabetes/DL_model"
+}
+
+lung_cancer = {
+    "RF" = "models/lung-cancer/RF_model",
+    "KNN" = "models/lung-cancer/KNN_model",
+    "DT" = "models/lung-cancer/DT_model",
+    "LR" = "models/lung-cancer/LR_model",
+    "SVM" = "models/lung-cancer/SVM_model",
+    "NB" = "models/lung-cancer/NB_model",
+    "DL" = "models/lung-cancer/DL_model"
+}
+
+# Quantum Models
+quantum_models = {
+    "heart_attack_qml" = "models/quantum/qml_heart_model.pkl",
+    "heart_attack_qiskit" = "models/quantum/qiskit_qml_heart_model.pkl"
+}
+
+[database]
+path = "./database/patients.db"
+
+[logging]
+level = "INFO"
+file = "logs/app.log"
